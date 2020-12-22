@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+  <header class="header">
+    <h1 id="title">Bản khảo sát Team Okela</h1>
+    <p id="description">Cảm ơn bạn đã hoàn thiện bản khảo sát</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label">Họ và tên:</label>
+      <input type="text" id="name" placeholder="Hãy nhập họ và tên của bạn" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label id="email-label">Email:</label>
+      <input type="text" id="email" placeholder="Hãy nhập email của bạn" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label id="number-label">Tuổi:</label>
+      <input type="number" id="age" placeholder="Hãy nhập tuổi của bạn" min="10" max="99" class="form-control" required>
+    </div>
+    <div id="form-group">
+      <p>Bạn đang học tại lớp quản lý nào?</p>
+      <select id="dropdown">
+        <option value="63IT1">63IT1</option>
+        <option value="63IT2">63IT2</option>
+        <option value="63IT3">63IT3</option>
+        <option value="63IT4">63IT4</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Bạn muốn chúng ta sẽ thực hiện website về chủ đề gì?</p>
+      <label><input name="chu-de" type="radio" class="input-radio" checked>Công nghệ</label>
+      <label><input name="chu-de" type="radio" class="input-radio">Tài chính</label>
+      <label><input name="chu-de" type="radio" class="input-radio">Chính trị</label>
+      <label><input name="chu-de" type="radio" class="input-radio">Showbiz</label>
+      <label><input name="chu-de" type="radio" class="input-radio">Ẩm thực</label>
+    </div>
+    <div class="form-group">
+      <p>Lý do bạn chọn chủ đề này(không bắt buộc):</p>
+      <textarea name="comment" id="comments" class="input-textarea" placeholder="Nhập ý kiến tại đây"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+
+</body>
+</html>
